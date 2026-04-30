@@ -1,0 +1,379 @@
+body {
+    background-color: #FFDBBB;
+    font-family: Arial;
+    text-align: center;
+    font-size: clamp(20px, 2.5vw, 30px);    
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0; 
+}
+
+#navigation {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    margin: 0 55px;
+    background-color: #664930;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: white;
+}
+
+.navHeader {
+    display: none; 
+}
+
+.navLinks {
+    list-style: none;
+    padding: 0 0 20px 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    #navigation {
+        width: 100%;
+        background-color: #664930;
+    }
+
+    .navHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        color: white;
+    }
+
+    .navTitle {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .navToggle {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .navLinks {
+        display: none; 
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navLinks.active {
+        display: flex; 
+    }
+
+    li {
+        display: block;
+        margin: 0;
+        padding: 15px;
+        border-radius: 0;
+        border-bottom: 1px solid #7d5e42;
+    }
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #997E67;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    padding: 20px;
+}
+
+#bookImage {
+    max-width: 10%; 
+    height: auto;
+    margin-right: 20px;
+}
+
+#bookShelf {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);         
+    gap: 30px;                
+    padding: 20px;
+}
+
+.book{
+    text-align: center; 
+    display: flex;            
+    flex-direction: row;       
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.book img {
+    width: 100%;
+    max-width:200px;
+    height: auto;
+}
+
+.book .content {
+    display: flex;
+    flex-direction: column;   
+    align-items: flex-start;     
+    text-align: left;   
+    gap: 10px;    
+}
+
+.book p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    line-height: 1.5;           
+    margin: 0;
+}
+
+.book .price {          
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.payButton {
+    margin-top: 25px;
+    padding: 1rem 2rem;
+    background-color: #664930;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    width: auto; 
+    align-self: center;    
+}
+
+.payButton:hover {
+    text-decoration: underline;
+    color: #997E67;
+}
+
+#cartActions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#cartActions p {
+    margin-bottom: 4px;
+}
+
+.styledCheckbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0.6rem 1.3rem;
+    background-color: #664930;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    gap: 10px;
+    align-self: center;    
+}
+
+.styledCheckbox input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: white;
+    cursor: pointer;
+}
+
+.styledCheckbox:hover {
+    text-decoration: underline;
+    color: #997E67;
+}
+
+@media (max-width: 768px) {
+  #bookShelf {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .book {
+    padding: 10px;
+  }
+
+  .book img {
+    max-width: 165px;
+  }
+}
+
+@media (max-width: 768px) {
+  #bookShelf {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+    display: flex;
+    align-items: center;     
+    justify-content: flex-start; 
+    gap: 15px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+.card img {
+    width: 120px;
+    height: auto;
+}
+
+.card .content {
+    text-align: left;
+}
+
+.card p {
+    font-size: 15pt;    
+    line-height: 1.5;           
+    margin: 0;
+}
+
+hr {
+    border: none;         
+    height: 2px;     
+    background-color: #CCBEB1;
+}
+
+.paymentTitle p {
+    text-align: left;
+    margin: 10px; 
+    font-size: 0.95em;  
+    margin-left: 2.5%;
+}
+
+@media (max-width: 768px) {
+    .paymentTitle p {
+        margin: 2.5%;          
+    }
+}
+
+#cartSummary {
+    text-align: center;
+    margin: 10px; 
+    font-size: 0.95em;  
+    margin-left: 2.5%;
+}
+
+@media (max-width: 768px) {
+    #cartSummary {
+        margin: 2.5%;          
+    }
+}
+
+#bookSummary {
+    text-align: center;
+    margin: 10px; 
+    font-size: 0.95em;  
+    margin-left: 2.5%;
+}
+
+@media (max-width: 768px) {
+    #bookSummary {
+        margin: 2.5%;          
+    }
+}
+
+#cardDetails {
+    border: 1px solid #997E67;  
+    border-radius: 5px;   
+    padding: 20px;           
+    background-color: #CCBEB1;
+    width: 60%;           
+    margin: 20px auto;
+    box-sizing: border-box; 
+    min-height: 350px;
+}
+
+@media (max-width: 768px) {
+    #cardDetails {
+        width: 80%;           
+    }
+}
+
+.detailRow {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;   
+    margin-bottom: 15px;   
+}
+
+.detailRow label {
+    flex: 0 0 20%; 
+    font-size: 20px;      
+    margin-right: 10px;    
+}
+
+.detailRow input, .detailRow select {
+    flex: 1; 
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px; 
+    margin: 0; 
+}
+
+.detailRow select {
+    margin-right: 8px;
+}
+
+#cardDetails small {
+    font-size: 15px;
+    display: block; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+.continueButton {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #664930;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15pt;
+    width: auto; 
+    align-self: center;  
+    text-align: center;
+    display: inline-block;
+}
+
+.continueButton:hover {
+    text-decoration: underline;
+    color: #997E67;
+}
+

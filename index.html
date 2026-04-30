@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang=“en”>
+    <head>
+        <title> Index </title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="header">
+            <img id="bookImage" src="image/books.png" alt="Books">
+            <h1>My Bookshop</h1>
+        </div>
+        <nav id="navigation">
+            <div class="navHeader">
+                <span class="navTitle">My Bookshop</span>
+                <button class="navToggle" onclick="toggleMenu()">☰</button>
+            </div>
+            <ul class="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div id="bookShelf">
+            <div class="book">
+                <img src="image/book1.jpg" alt="Cover of the book As Long As The Lemon Trees Grow">
+                <div class="content">
+                    <p><b>As Long As The Lemon Trees Grow by Zoulfa Katouh</b><br>
+                    This heartbreaking yet hopeful YA novel follows a young pharmacy student navigating the trauma and chaos of the Syrian Revolution. </p>
+                    <p class="price">£8.19</p>
+                    <label class="styledCheckbox">
+                        <input type="checkbox" class="bookSelect" data-title="As Long As The Lemon Trees Grow" data-price="8.19">
+                        <span class="checkboxButton">Select this book</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="book">
+                <img src="image/book2.jpg" alt="Cover of the book A Little Life">
+                <div class="content">
+                    <p><b>A Little Life by Hanya Yanagihara</b><br>
+                    This critically acclaimed, deeply emotional novel follows the complex lives and enduring bonds of four friends in New York City over several decades.</p>
+                    <p class="price">£7.69</p>
+                    <label class="styledCheckbox">
+                        <input type="checkbox" class="bookSelect" data-title="A Little Life" data-price="7.69">
+                        <span class="checkboxButton">Select this book</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="book">
+                <img src="image/book3.jpg" alt="Cover of the book The Silent Patient">
+                <div class="content">
+                    <p><b>The Silent Patient by Alex Michaelides</b><br>
+                    Gripping psychological thriller about Alicia Berenson, a famous painter who inexplicably shoots her husband and never speaks another word.</p>
+                    <p class="price">£11.99</p>
+                    <label class="styledCheckbox">
+                        <input type="checkbox" class="bookSelect" data-title="The Silent Patient" data-price="11.99">
+                        <span class="checkboxButton">Select this book</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="book">
+                <img src="image/book4.jpg" alt="Cover of the book The Book Thief">
+                <div class="content">
+                    <p><b>The Book Thief by Markus Zusak</b><br>
+                    This profoundly moving historical novel narrated by Death, follows a young girl’s life and her relationship with books in Nazi Germany.</p>
+                    <p class="price">£6.19</p>
+                    <label class="styledCheckbox">
+                        <input type="checkbox" class="bookSelect" data-title="The Book Thief" data-price="6.19">
+                        <span class="checkboxButton">Select this book</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="book">
+                <img src="image/book5.webp" alt="Cover of the book Once Upon A Broken Heart">
+                <div class="content">
+                    <p><b>Once Upon A Broken Heart by Stephanie Garber</b><br>
+                    Whimsical, adventurous YA fantasy following Evangeline Fox, who strikes a dangerous deal with the Prince of Hearts to stop her true love’s wedding.</p>
+                    <p class="price">£8.99</p>
+                    <label class="styledCheckbox">
+                        <input type="checkbox" class="bookSelect" data-title="Once Upon A Broken Heart" data-price="8.99">
+                        <span class="checkboxButton">Select this book</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="book">
+                <img src="image/book6.jpg" alt="Cover of the book The Midnight Library">
+                <div class="content">
+                    <p><b>The Midnight Library by Matt Haig</b><br>
+                    Popular speculative fantasy novel about Nora Seed, who finds a library with infinite books representing different lives she could have lived.</p>
+                    <p class="price">£7.49</p>
+                    <label class="styledCheckbox">
+                        <input type="checkbox" class="bookSelect" data-title="The Midnight Library" data-price="7.49">
+                        <span class="checkboxButton">Select this book</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+    <div id="cartActions">
+        <p id="totalPrice">Total: £0.00</p>
+        <a href="pay.html" class="payButton" title="Proceed to payment for selected book(s)">Pay</a>
+    </div>
+
+    <script src="JS/index.js"></script>
+    </body>
+</html>

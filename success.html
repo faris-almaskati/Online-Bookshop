@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang=“en”>
+    <head>
+        <title> Success </title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="header">
+            <img id="bookImage" src="image/books.png" alt="Books">
+            <h1>My Bookshop</h1>
+        </div>
+        <nav id="navigation">
+            <div class="navHeader">
+                <span class="navTitle">My Bookshop</span>
+                <button class="navToggle" onclick="toggleMenu()">☰</button>
+            </div>
+            <ul class="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="paymentTitle"><p>You have successfully entered your card details</p></div>
+        <hr>
+        <div id="bookSummary"></div>
+        <p id="totalDisplay">Total Price: £0.00</p>
+        <div class="card">
+            <div class="content">
+                <p><b>Debit/Credit Card</b></p>
+            </div>
+            <img src="image/mastercard.png" alt="Mastercard">
+            <p id="cardNumFeedback"></p>        
+        </div>
+        <div id="cardDetails"></div>
+    <script src="JS/success.js"></script>
+    </body>
+</html>

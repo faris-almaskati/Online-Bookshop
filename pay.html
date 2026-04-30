@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang=“en”>
+    <head>
+        <title> Pay </title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="header">
+            <img id="bookImage" src="image/books.png" alt="Books">
+            <h1>My Bookshop</h1>
+        </div>
+        <nav id="navigation">
+            <div class="navHeader">
+                <span class="navTitle">My Bookshop</span>
+                <button class="navToggle" onclick="toggleMenu()">☰</button>
+            </div>
+            <ul class="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="paymentTitle"><p>Payment Options</p></div>
+        <hr>
+        <div id="cartSummary"></div>
+        <p id="totalDisplay">Total Price: £0.00</p>
+        <div class="card">
+            <div class="content">
+                <p><b>Debit/Credit Card</b></p>
+            </div>
+            <img src="image/mastercard.png" alt="Mastercard">
+        </div>
+        <div id="cardDetails">
+            <div class="detailRow">
+                <label for="cardNumber">Card Number</label><br>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number"><br><br>
+            </div>
+
+            <div class="detailRow">
+                <label for="expMonth">Expiration Date</label>
+                <select id="expMonth" name="expMonth">
+                    <option value="">Month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select id="expYear" name="expYear">
+                    <option value="">Year</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                    <option value="2030">2031</option>
+                </select>
+            </div>
+            
+            <div class="detailRow">
+                <label for="securityCode">Security Code</label>
+                <input type="text" id="securityCode" name="securityCode" placeholder="CVV"><br>
+            </div>
+            <small>(3–4 digit code normally on the back of your card)</small>
+
+            <a href="success.html" class="continueButton" title="View the successful payment and selected book(s)">Continue</a>
+        </div>
+    <script src="JS/pay.js"></script>
+    </body>
+</html>
